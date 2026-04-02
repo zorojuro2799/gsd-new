@@ -1,0 +1,4 @@
+1. Initialized Expo SDK 54 project using the expo-template-blank-typescript
+2. Enabled React Native New Architecture (Fabric) in app.json
+3. Configured app.json for dark mode and renamed app to 'Aegis Fleet Orchestrator'
+4. Installed base dependencies
