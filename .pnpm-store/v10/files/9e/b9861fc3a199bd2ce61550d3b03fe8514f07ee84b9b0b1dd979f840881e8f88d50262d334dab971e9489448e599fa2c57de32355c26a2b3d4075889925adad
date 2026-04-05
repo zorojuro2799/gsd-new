@@ -1,0 +1,87 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "host.exp.exponent",
+    "module": "expo.modules.gl",
+    "version": "55.0.10",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.0.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "expo.modules.gl-55.0.10.aar",
+          "url": "expo.modules.gl-55.0.10.aar",
+          "size": 981291,
+          "sha512": "47b71bb32b6ef8876b07b7ad89f637c8f4a7b959de6b9fccf7c7b0a066bc0da0354c396999cfc9becfdd08d9c9ce75f5c6545b8025c2121befcf5dd1ff9177d4",
+          "sha256": "a2f9aca74f20073b07d13101f2603edb1e63a5d472460e92169b6e428c51864a",
+          "sha1": "036619bde3125400c08318adb4280e61569391b6",
+          "md5": "2816d09046776a41b7d05dfed0c97684"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk7",
+          "version": {
+            "requires": "2.1.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "expo.modules.gl-55.0.10.aar",
+          "url": "expo.modules.gl-55.0.10.aar",
+          "size": 981291,
+          "sha512": "47b71bb32b6ef8876b07b7ad89f637c8f4a7b959de6b9fccf7c7b0a066bc0da0354c396999cfc9becfdd08d9c9ce75f5c6545b8025c2121befcf5dd1ff9177d4",
+          "sha256": "a2f9aca74f20073b07d13101f2603edb1e63a5d472460e92169b6e428c51864a",
+          "sha1": "036619bde3125400c08318adb4280e61569391b6",
+          "md5": "2816d09046776a41b7d05dfed0c97684"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "expo.modules.gl-55.0.10-sources.jar",
+          "url": "expo.modules.gl-55.0.10-sources.jar",
+          "size": 12052,
+          "sha512": "11a34a55c37c76b33f3931b9caa588e4d4ac4c204f943b6bc46580a3587fd782a3c1814ad275da5a086860e42b60cdf7de12d16eb835d14ecef8bedd4e0a1209",
+          "sha256": "34258c1facd47505795431b582b01ae721e99682f193a8029e6d33b419247f80",
+          "sha1": "e0997b0887893b0554ab4c1ffb972f92f0962cad",
+          "md5": "82c85258009a79435ad0ffbfde08e7cc"
+        }
+      ]
+    }
+  ]
+}

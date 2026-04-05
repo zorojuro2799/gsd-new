@@ -1,0 +1,76 @@
+{
+  "version": "1.0",
+  "workflows": [
+    {
+      "id": "thermal_anomaly_response",
+      "name": "Thermal Anomaly Response",
+      "triggerRuleId": "cpu_temp_critical",
+      "cooldownMs": 300000,
+      "stages": [
+        {
+          "id": "visual_confirm",
+          "name": "Visual Confirmation",
+          "robotTier": "Aerial",
+          "verb": "HOVER",
+          "zone": "SECTOR_3",
+          "command": "Aerial visual confirmation of thermal anomaly zone",
+          "estimatedDurationMs": 30000
+        },
+        {
+          "id": "thermal_scan",
+          "name": "Thermal Scan",
+          "robotTier": "Quadruped",
+          "verb": "INSPECT",
+          "zone": "SECTOR_3",
+          "sensorMode": "THERMAL",
+          "command": "Quadruped thermal scan of anomaly area",
+          "estimatedDurationMs": 60000
+        },
+        {
+          "id": "detailed_inspection",
+          "name": "Detailed IR Inspection",
+          "robotTier": "Specialized",
+          "verb": "INSPECT",
+          "zone": "SECTOR_3",
+          "sensorMode": "IR",
+          "command": "Detailed IR inspection of thermal hotspot",
+          "estimatedDurationMs": 90000
+        }
+      ]
+    },
+    {
+      "id": "battery_critical_response",
+      "name": "Battery Critical Return-to-Dock",
+      "triggerRuleId": "battery_critical",
+      "cooldownMs": 60000,
+      "stages": [
+        {
+          "id": "emergency_dock",
+          "name": "Emergency Return to Dock",
+          "robotTier": null,
+          "verb": "DOCK",
+          "zone": "DOCK_A",
+          "command": "Emergency return to nearest charging dock",
+          "estimatedDurationMs": 120000
+        }
+      ]
+    },
+    {
+      "id": "connection_loss_response",
+      "name": "Connection Loss Investigation",
+      "triggerRuleId": "connection_error",
+      "cooldownMs": 120000,
+      "stages": [
+        {
+          "id": "locate_robot",
+          "name": "Locate Disconnected Robot",
+          "robotTier": "Aerial",
+          "verb": "PATROL",
+          "zone": "SECTOR_1",
+          "command": "Aerial search for disconnected robot",
+          "estimatedDurationMs": 45000
+        }
+      ]
+    }
+  ]
+}

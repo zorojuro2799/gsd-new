@@ -1,0 +1,80 @@
+0 verbose cli /Users/msv/.nvm/versions/node/v24.14.0/bin/node /usr/local/bin/npm
+1 info using npm@11.9.0
+2 info using node@v24.14.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Volumes/Will of D/Cloude Code Database/gsd-new/.npmrc
+5 silly config load:file:/Users/msv/.npmrc
+6 silly config load:file:/Users/msv/.nvm/versions/node/v24.14.0/etc/npmrc
+7 verbose title npm install @nozbe/watermelondb @nozbe/with-observables expo-sqlite@~15.1.1
+8 verbose argv "install" "@nozbe/watermelondb" "@nozbe/with-observables" "expo-sqlite@~15.1.1" "--cache" "./.npm-cache" "--prefer-offline"
+9 verbose logfile logs-max:10 dir:/Volumes/Will of D/Cloude Code Database/gsd-new/.npm-cache/_logs/2026-04-02T20_17_10_625Z-
+10 verbose logfile /Volumes/Will of D/Cloude Code Database/gsd-new/.npm-cache/_logs/2026-04-02T20_17_10_625Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly idealTree buildDeps
+14 silly fetch manifest @nozbe/watermelondb@*
+15 silly packumentCache full:https://registry.npmjs.org/@nozbe%2fwatermelondb cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/@nozbe%2fwatermelondb 793ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/@nozbe%2fwatermelondb set size:undefined disposed:false
+18 silly fetch manifest @nozbe/with-observables@*
+19 silly packumentCache full:https://registry.npmjs.org/@nozbe%2fwith-observables cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/@nozbe%2fwith-observables 77ms (cache miss)
+21 silly packumentCache full:https://registry.npmjs.org/@nozbe%2fwith-observables set size:undefined disposed:false
+22 silly fetch manifest @types/hoist-non-react-statics@^3.3.1
+23 silly packumentCache full:https://registry.npmjs.org/@types%2fhoist-non-react-statics cache-miss
+24 http fetch GET 200 https://registry.npmjs.org/@types%2fhoist-non-react-statics 77ms (cache miss)
+25 silly packumentCache full:https://registry.npmjs.org/@types%2fhoist-non-react-statics set size:undefined disposed:false
+26 silly fetch manifest @types/react@~19.1.0
+27 silly packumentCache full:https://registry.npmjs.org/@types%2freact cache-miss
+28 http fetch GET 200 https://registry.npmjs.org/@types%2freact 214ms (cache miss)
+29 silly packumentCache full:https://registry.npmjs.org/@types%2freact set size:undefined disposed:false
+30 silly fetch manifest @types/react@^16||^17||^18
+31 silly packumentCache full:https://registry.npmjs.org/@types%2freact cache-miss
+32 http cache https://registry.npmjs.org/@types%2freact 10ms (cache hit)
+33 silly packumentCache full:https://registry.npmjs.org/@types%2freact set size:2588964 disposed:false
+34 verbose stack Error: unable to resolve dependency tree
+34 verbose stack     at #failPeerConflict (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1402:25)
+34 verbose stack     at #loadPeerSet (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1395:29)
+34 verbose stack     at async #buildDepStep (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:916:11)
+34 verbose stack     at async Arborist.buildIdealTree (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:170:7)
+34 verbose stack     at async Promise.all (index 1)
+34 verbose stack     at async Arborist.reify (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:110:5)
+34 verbose stack     at async Install.exec (/usr/local/lib/node_modules/npm/lib/commands/install.js:151:5)
+34 verbose stack     at async Npm.exec (/usr/local/lib/node_modules/npm/lib/npm.js:208:9)
+34 verbose stack     at async module.exports (/usr/local/lib/node_modules/npm/lib/cli/entry.js:67:5)
+35 error code ERESOLVE
+36 error ERESOLVE unable to resolve dependency tree
+37 error
+38 error While resolving: aegis-fleet-orchestrator@1.0.0
+38 error Found: @types/react@19.1.17[2m[22m
+38 error [2mnode_modules/@types/react[22m
+38 error   [34mdev[39m @types/react@"~19.1.0" from the root project
+38 error   [95mpeer[39m @types/react@"*" from @types/hoist-non-react-statics@3.3.7[2m[22m
+38 error   [2mnode_modules/@types/hoist-non-react-statics[22m
+38 error     peerOptional @types/hoist-non-react-statics@"^3.3.1" from @nozbe/with-observables@1.6.0[2m[22m
+38 error     [2mnode_modules/@nozbe/with-observables[22m
+38 error       @nozbe/with-observables@"*" from the root project
+38 error
+38 error Could not resolve dependency:
+38 error peerOptional @types/react@"^16||^17||^18" from @nozbe/with-observables@1.6.0[2m[22m
+38 error [2mnode_modules/@nozbe/with-observables[22m
+38 error   @nozbe/with-observables@"*" from the root project
+38 error
+38 error Fix the upstream dependency conflict, or retry
+38 error this command with --force or --legacy-peer-deps
+38 error to accept an incorrect (and potentially broken) dependency resolution.
+39 error
+39 error
+39 error For a full report see:
+39 error /Volumes/Will of D/Cloude Code Database/gsd-new/.npm-cache/_logs/2026-04-02T20_17_10_625Z-eresolve-report.txt
+40 silly unfinished npm timer reify 1775161030714
+41 silly unfinished npm timer reify:loadTrees 1775161030716
+42 silly unfinished npm timer idealTree:buildDeps 1775161030822
+43 silly unfinished npm timer idealTree:#root 1775161030822
+44 verbose cwd /Volumes/Will of D/Cloude Code Database/gsd-new
+45 verbose os Darwin 25.2.0
+46 verbose node v24.14.0
+47 verbose npm  v11.9.0
+48 verbose exit 1
+49 verbose code 1
+50 error A complete log of this run can be found in: /Volumes/Will of D/Cloude Code Database/gsd-new/.npm-cache/_logs/2026-04-02T20_17_10_625Z-debug-0.log

@@ -1,0 +1,21 @@
+0 verbose cli /Users/msv/.nvm/versions/node/v24.14.0/bin/node /usr/local/bin/npm
+1 info using npm@11.9.0
+2 info using node@v24.14.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Volumes/Will of D/Cloude Code Database/gsd-new/.npmrc
+5 silly config load:file:/Users/msv/.npmrc
+6 silly config load:file:/Users/msv/.nvm/versions/node/v24.14.0/etc/npmrc
+7 verbose title npm search transform-import-meta
+8 verbose argv "search" "transform-import-meta" "--cache" "./.npm-cache"
+9 verbose logfile logs-max:10 dir:/Volumes/Will of D/Cloude Code Database/gsd-new/.npm-cache/_logs/2026-04-02T19_40_03_773Z-
+10 verbose logfile /Volumes/Will of D/Cloude Code Database/gsd-new/.npm-cache/_logs/2026-04-02T19_40_03_773Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly search searching packages
+13 http fetch GET 200 https://registry.npmjs.org/-/v1/search?text=transform-import-meta&size=20&from=0&quality=0.65&popularity=0.98&maintenance=0.5 1227ms (cache miss)
+14 silly search search completed
+15 verbose cwd /Volumes/Will of D/Cloude Code Database/gsd-new
+16 verbose os Darwin 25.2.0
+17 verbose node v24.14.0
+18 verbose npm  v11.9.0
+19 verbose exit 0
+20 info ok

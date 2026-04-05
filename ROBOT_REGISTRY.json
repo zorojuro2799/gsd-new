@@ -1,0 +1,247 @@
+{
+  "version": "2.0",
+  "robots": [
+    {
+      "id": "hum-optimus-gen2",
+      "class": "Humanoid",
+      "model": "Tesla Optimus Gen 2",
+      "middleware": { "protocol": "Zenoh", "transport": "Proprietary JSI Bridge" },
+      "state_logic": { "battery_critical_threshold": 15, "estop_latency_ms": 2, "mesh_stream_available": true },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "pelvis"] },
+      "model_path": "/assets/models/optimus.glb"
+    },
+    {
+      "id": "hum-figure-02",
+      "class": "Humanoid",
+      "model": "Figure 02",
+      "middleware": { "protocol": "gRPC", "transport": "Native gRPC" },
+      "state_logic": { "battery_critical_threshold": 20, "estop_latency_ms": 5, "mesh_stream_available": true },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "hum-figure-03",
+      "class": "Humanoid",
+      "model": "Figure 03",
+      "middleware": { "protocol": "gRPC", "transport": "Native gRPC" },
+      "state_logic": { "battery_critical_threshold": 20, "estop_latency_ms": 5, "mesh_stream_available": true },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "hum-electric-atlas",
+      "class": "Humanoid",
+      "model": "BD Electric Atlas",
+      "middleware": { "protocol": "gRPC", "transport": "BD SDK" },
+      "state_logic": { "battery_critical_threshold": 10, "estop_latency_ms": 3, "mesh_stream_available": true },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base"] }
+    },
+    {
+      "id": "hum-apollo",
+      "class": "Humanoid",
+      "model": "Apptronik Apollo",
+      "middleware": { "protocol": "ROS2", "distribution": "Jazzy Jalisco", "transport": "DDS" },
+      "state_logic": { "battery_critical_threshold": 15, "estop_latency_ms": 10, "mesh_stream_available": true },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_footprint"] }
+    },
+    {
+      "id": "hum-1x-neo",
+      "class": "Humanoid",
+      "model": "1X NEO",
+      "middleware": { "protocol": "ROS2", "transport": "Zenoh Bridge" },
+      "state_logic": { "battery_critical_threshold": 20, "estop_latency_ms": 5, "mesh_stream_available": true },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "hum-unitree-g1",
+      "class": "Humanoid",
+      "model": "Unitree G1",
+      "middleware": { "protocol": "Zenoh", "transport": "CycloneDDS" },
+      "state_logic": { "battery_critical_threshold": 15, "estop_latency_ms": 5, "mesh_stream_available": true },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "pelvis"] }
+    },
+    {
+      "id": "quad-spot-01",
+      "class": "Quadruped",
+      "model": "Boston Dynamics Spot (Enterprise)",
+      "middleware": { "protocol": "gRPC", "transport": "Python SDK Bridge" },
+      "state_logic": { "battery_critical_threshold": 20, "estop_latency_ms": 10, "mesh_stream_available": true },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["vision", "odom", "body"] },
+      "model_path": "/assets/models/spot.glb"
+    },
+    {
+      "id": "quad-anymal-d",
+      "class": "Quadruped",
+      "model": "ANYmal D",
+      "middleware": { "protocol": "ROS2", "distribution": "Jazzy Jalisco", "transport": "Native DDS" },
+      "state_logic": { "battery_critical_threshold": 20, "estop_latency_ms": 5, "mesh_stream_available": true },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base"] }
+    },
+    {
+      "id": "quad-unitree-go2",
+      "class": "Quadruped",
+      "model": "Unitree Go2",
+      "middleware": { "protocol": "CycloneDDS", "transport": "High-speed WebRTC" },
+      "state_logic": { "battery_critical_threshold": 15, "estop_latency_ms": 20, "mesh_stream_available": true },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "quad-unitree-b2",
+      "class": "Quadruped",
+      "model": "Unitree B2",
+      "middleware": { "protocol": "CycloneDDS", "transport": "WebRTC" },
+      "state_logic": { "battery_critical_threshold": 15, "estop_latency_ms": 10, "mesh_stream_available": true },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "quad-ghost-v60",
+      "class": "Quadruped",
+      "model": "Ghost Robotics V60",
+      "middleware": { "protocol": "ROS2", "transport": "ROS2 Bridge" },
+      "state_logic": { "battery_critical_threshold": 20, "estop_latency_ms": 15, "mesh_stream_available": true },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "body"] }
+    },
+    {
+      "id": "quad-lynx-m20",
+      "class": "Quadruped",
+      "model": "DEEP Robotics Lynx M20",
+      "middleware": { "protocol": "ROS2", "transport": "DDS" },
+      "state_logic": { "battery_critical_threshold": 20, "estop_latency_ms": 15, "mesh_stream_available": true },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "amr-otto-100",
+      "class": "Logistics",
+      "model": "OTTO 100",
+      "middleware": { "protocol": "VDA 5050", "transport": "MQTT" },
+      "state_logic": { "battery_critical_threshold": 15, "estop_latency_ms": 50, "mesh_stream_available": false },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "amr-otto-1500",
+      "class": "Logistics",
+      "model": "OTTO 1500",
+      "middleware": { "protocol": "VDA 5050", "transport": "MQTT" },
+      "state_logic": { "battery_critical_threshold": 15, "estop_latency_ms": 50, "mesh_stream_available": false },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "amr-mir-250",
+      "class": "Logistics",
+      "model": "MiR 250",
+      "middleware": { "protocol": "REST", "transport": "HTTP/WebSockets" },
+      "state_logic": { "battery_critical_threshold": 20, "estop_latency_ms": 100, "mesh_stream_available": false },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "amr-mir-1350",
+      "class": "Logistics",
+      "model": "MiR 1350",
+      "middleware": { "protocol": "REST", "transport": "HTTP/WebSockets" },
+      "state_logic": { "battery_critical_threshold": 20, "estop_latency_ms": 100, "mesh_stream_available": false },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "amr-zebra-fetch",
+      "class": "Logistics",
+      "model": "Zebra Fetch",
+      "middleware": { "protocol": "ROS2", "transport": "DDS" },
+      "state_logic": { "battery_critical_threshold": 10, "estop_latency_ms": 30, "mesh_stream_available": true },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "amr-locus-origin",
+      "class": "Logistics",
+      "model": "Locus Origin",
+      "middleware": { "protocol": "REST", "transport": "MQTT" },
+      "state_logic": { "battery_critical_threshold": 15, "estop_latency_ms": 50, "mesh_stream_available": false },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "amr-amazon-proteus",
+      "class": "Logistics",
+      "model": "Amazon Proteus (Mock)",
+      "middleware": { "protocol": "Proprietary", "transport": "AWS IoT Core MQTT" },
+      "state_logic": { "battery_critical_threshold": 10, "estop_latency_ms": 20, "mesh_stream_available": false },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "aer-matrice-350",
+      "class": "Aerial",
+      "model": "DJI Matrice 350 RTK",
+      "middleware": { "protocol": "PSDK 3.x", "transport": "Payload SDK Bridge" },
+      "state_logic": { "battery_critical_threshold": 25, "estop_latency_ms": 40, "mesh_stream_available": false },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "aer-dji-dock-2",
+      "class": "Aerial",
+      "model": "DJI Dock 2",
+      "middleware": { "protocol": "Cloud API", "transport": "MQTT" },
+      "state_logic": { "battery_critical_threshold": 15, "estop_latency_ms": 200, "mesh_stream_available": false },
+      "coordinate_frames": { "standard": "WGS84", "frames": ["earth", "dock"] }
+    },
+    {
+      "id": "aer-skydio-x10",
+      "class": "Aerial",
+      "model": "Skydio X10",
+      "middleware": { "protocol": "Autonomy Engine API", "transport": "WebRTC" },
+      "state_logic": { "battery_critical_threshold": 20, "estop_latency_ms": 25, "mesh_stream_available": true },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "aer-parrot-anafi-ai",
+      "class": "Aerial",
+      "model": "Parrot ANAFI Ai",
+      "middleware": { "protocol": "Olympe SDK", "transport": "4G/LTE WebSockets" },
+      "state_logic": { "battery_critical_threshold": 20, "estop_latency_ms": 150, "mesh_stream_available": true },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "spec-exynaero",
+      "class": "Specialized",
+      "model": "ExynAero",
+      "middleware": { "protocol": "Proprietary", "transport": "TCP/IP" },
+      "state_logic": { "battery_critical_threshold": 20, "estop_latency_ms": 50, "mesh_stream_available": true },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "spec-sarcos-guardian",
+      "class": "Specialized",
+      "model": "Sarcos Guardian",
+      "middleware": { "protocol": "gRPC", "transport": "TCP/IP" },
+      "state_logic": { "battery_critical_threshold": 15, "estop_latency_ms": 10, "mesh_stream_available": true },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "spec-crawler-1",
+      "class": "Specialized",
+      "model": "Inspection Crawler A",
+      "middleware": { "protocol": "ROS", "transport": "TCP/IP" },
+      "state_logic": { "battery_critical_threshold": 10, "estop_latency_ms": 100, "mesh_stream_available": false },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "spec-crawler-2",
+      "class": "Specialized",
+      "model": "Inspection Crawler B",
+      "middleware": { "protocol": "ROS", "transport": "TCP/IP" },
+      "state_logic": { "battery_critical_threshold": 10, "estop_latency_ms": 100, "mesh_stream_available": false },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["map", "odom", "base_link"] }
+    },
+    {
+      "id": "spec-kuka-arm",
+      "class": "Specialized",
+      "model": "KUKA Stationary Arm",
+      "middleware": { "protocol": "KUKA RSI", "transport": "UDP" },
+      "state_logic": { "battery_critical_threshold": 0, "estop_latency_ms": 1, "mesh_stream_available": false },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["base", "tool0"] }
+    },
+    {
+      "id": "spec-ur-arm",
+      "class": "Specialized",
+      "model": "UR Stationary Arm",
+      "middleware": { "protocol": "RTDE", "transport": "TCP/IP" },
+      "state_logic": { "battery_critical_threshold": 0, "estop_latency_ms": 2, "mesh_stream_available": false },
+      "coordinate_frames": { "standard": "REP-105", "frames": ["base", "tool0"] }
+    }
+  ]
+}

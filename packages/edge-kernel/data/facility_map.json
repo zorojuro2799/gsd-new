@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "zones": [
+    {
+      "id": "DOCK_A",
+      "name": "Charging Dock A",
+      "type": "EXCLUSIVE",
+      "bounds": { "xMin": -5, "xMax": 5, "yMin": -5, "yMax": 5, "zMin": 0, "zMax": 2 }
+    },
+    {
+      "id": "DOCK_B",
+      "name": "Charging Dock B",
+      "type": "EXCLUSIVE",
+      "bounds": { "xMin": 30, "xMax": 40, "yMin": -5, "yMax": 5, "zMin": 0, "zMax": 2 }
+    },
+    {
+      "id": "SECTOR_1",
+      "name": "Assembly Line A",
+      "type": "EXCLUSIVE",
+      "bounds": { "xMin": 10, "xMax": 25, "yMin": 0, "yMax": 15, "zMin": 0, "zMax": 3 }
+    },
+    {
+      "id": "SECTOR_2",
+      "name": "Assembly Line B",
+      "type": "EXCLUSIVE",
+      "bounds": { "xMin": 10, "xMax": 25, "yMin": 20, "yMax": 35, "zMin": 0, "zMax": 3 }
+    },
+    {
+      "id": "SECTOR_3",
+      "name": "Inspection Bay",
+      "type": "EXCLUSIVE",
+      "bounds": { "xMin": 30, "xMax": 50, "yMin": 10, "yMax": 30, "zMin": 0, "zMax": 3 }
+    },
+    {
+      "id": "CORRIDOR_MAIN",
+      "name": "Main Corridor",
+      "type": "SHARED",
+      "bounds": { "xMin": 0, "xMax": 60, "yMin": -2, "yMax": 0, "zMin": 0, "zMax": 3 }
+    },
+    {
+      "id": "AIRSPACE_A",
+      "name": "Aerial Operations Zone A",
+      "type": "AERIAL_EXCLUSIVE",
+      "bounds": { "xMin": 0, "xMax": 60, "yMin": 0, "yMax": 60, "zMin": 3, "zMax": 20 }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "battery_critical",
+    "field": "battery",
+    "op": "lt",
+    "threshold": 15,
+    "severity": "CRITICAL",
+    "cooldownMs": 30000,
+    "message": "Battery critically low — robot must return to dock"
+  },
+  {
+    "id": "battery_low",
+    "field": "battery",
+    "op": "lt",
+    "threshold": 25,
+    "severity": "WARNING",
+    "cooldownMs": 60000,
+    "message": "Battery low — plan return to dock soon"
+  },
+  {
+    "id": "cpu_temp_critical",
+    "field": "cpuTemp",
+    "op": "gt",
+    "threshold": 90,
+    "severity": "CRITICAL",
+    "cooldownMs": 20000,
+    "message": "CPU temperature critical — possible thermal runaway"
+  },
+  {
+    "id": "cpu_temp_high",
+    "field": "cpuTemp",
+    "op": "gt",
+    "threshold": 80,
+    "severity": "WARNING",
+    "cooldownMs": 30000,
+    "message": "CPU temperature elevated"
+  },
+  {
+    "id": "connection_error",
+    "field": "connectionState",
+    "op": "eq",
+    "threshold": "ERROR",
+    "severity": "CRITICAL",
+    "cooldownMs": 10000,
+    "message": "Robot connection lost"
+  }
+]

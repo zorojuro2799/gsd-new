@@ -1,0 +1,47 @@
+0 verbose cli /Users/msv/.nvm/versions/node/v24.14.0/bin/node /usr/local/bin/npm
+1 info using npm@11.9.0
+2 info using node@v24.14.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Volumes/Will of D/Cloude Code Database/gsd-new/.npmrc
+5 silly config load:file:/Users/msv/.npmrc
+6 silly config load:file:/Users/msv/.nvm/versions/node/v24.14.0/etc/npmrc
+7 verbose title npm install @babel/plugin-transform-import-meta
+8 verbose argv "install" "--save-dev" "@babel/plugin-transform-import-meta" "--legacy-peer-deps" "--cache" "./.npm-cache"
+9 verbose logfile logs-max:10 dir:/Volumes/Will of D/Cloude Code Database/gsd-new/.npm-cache/_logs/2026-04-02T19_39_45_802Z-
+10 verbose logfile /Volumes/Will of D/Cloude Code Database/gsd-new/.npm-cache/_logs/2026-04-02T19_39_45_802Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly idealTree buildDeps
+14 silly fetch manifest @babel/plugin-transform-import-meta@*
+15 silly packumentCache full:https://registry.npmjs.org/@babel%2fplugin-transform-import-meta cache-miss
+16 http fetch GET 404 https://registry.npmjs.org/@babel%2fplugin-transform-import-meta 754ms (cache skip)
+17 silly placeDep ROOT @babel/plugin-transform-import-meta@ OK for: aegis-fleet-orchestrator@1.0.0 want: *
+18 verbose stack HttpErrorGeneral: 404 Not Found - GET https://registry.npmjs.org/@babel%2fplugin-transform-import-meta - Not found
+18 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-fetch/lib/check-response.js:103:15
+18 verbose stack     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+18 verbose stack     at async RegistryFetcher.packument (/usr/local/lib/node_modules/npm/node_modules/pacote/lib/registry.js:90:19)
+18 verbose stack     at async RegistryFetcher.manifest (/usr/local/lib/node_modules/npm/node_modules/pacote/lib/registry.js:128:23)
+18 verbose stack     at async #fetchManifest (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1214:20)
+18 verbose stack     at async #nodeFromEdge (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1052:19)
+18 verbose stack     at async #buildDepStep (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:916:11)
+18 verbose stack     at async Arborist.buildIdealTree (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:170:7)
+18 verbose stack     at async Promise.all (index 1)
+18 verbose stack     at async Arborist.reify (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:110:5)
+19 verbose statusCode 404
+20 verbose pkgid @babel/plugin-transform-import-meta@*
+21 error code E404
+22 error 404 Not Found - GET https://registry.npmjs.org/@babel%2fplugin-transform-import-meta - Not found
+23 error 404
+24 error 404  The requested resource '@babel/plugin-transform-import-meta@*' could not be found or you do not have permission to access it.
+25 error 404
+26 error 404 Note that you can also install from a
+27 error 404 tarball, folder, http url, or git url.
+28 silly unfinished npm timer reify 1775158785903
+29 silly unfinished npm timer reify:loadTrees 1775158785905
+30 verbose cwd /Volumes/Will of D/Cloude Code Database/gsd-new
+31 verbose os Darwin 25.2.0
+32 verbose node v24.14.0
+33 verbose npm  v11.9.0
+34 verbose exit 1
+35 verbose code 1
+36 error A complete log of this run can be found in: /Volumes/Will of D/Cloude Code Database/gsd-new/.npm-cache/_logs/2026-04-02T19_39_45_802Z-debug-0.log

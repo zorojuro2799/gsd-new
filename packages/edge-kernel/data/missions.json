@@ -1,0 +1,34 @@
+[
+  {
+    "id": "02417dda-80da-42c7-8f8b-4872825c056a",
+    "name": "Maintenance Run Alpha",
+    "status": "ACTIVE",
+    "source": "MANUAL",
+    "priority": "HIGH",
+    "createdAt": 1775220348600,
+    "tasks": [
+      {
+        "id": "c0c4a22e-9dec-40b9-88af-0061ce69c343",
+        "robotId": "quad-spot-01",
+        "command": "Scout Zone A — LiDAR patrol",
+        "status": "EXECUTING",
+        "createdAt": 1775220348601
+      },
+      {
+        "id": "ec68f163-0636-420d-b9bd-2727404de04a",
+        "robotId": "hum-optimus-gen2",
+        "command": "Inspect panel B7",
+        "status": "QUEUED",
+        "createdAt": 1775220348601
+      },
+      {
+        "id": "3cc03057-bb26-4c6b-9617-a449c2eee0cf",
+        "robotId": "aer-matrice-350",
+        "command": "Aerial survey Zone C",
+        "status": "QUEUED",
+        "createdAt": 1775220348601
+      }
+    ],
+    "dispatchedAt": 1775220349215
+  }
+]

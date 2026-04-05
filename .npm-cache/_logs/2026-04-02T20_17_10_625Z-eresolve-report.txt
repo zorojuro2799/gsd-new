@@ -1,0 +1,23 @@
+'Log files:
+/Volumes/Will of D/Cloude Code Database/gsd-new/.npm-cache/_logs/2026-04-02T20_17_10_625Z-debug-0.log
+
+# npm resolution error report
+
+While resolving: aegis-fleet-orchestrator@1.0.0
+Found: @types/react@19.1.17
+node_modules/@types/react
+  dev @types/react@"~19.1.0" from the root project
+  peer @types/react@"*" from @types/hoist-non-react-statics@3.3.7
+  node_modules/@types/hoist-non-react-statics
+    peerOptional @types/hoist-non-react-statics@"^3.3.1" from @nozbe/with-observables@1.6.0
+    node_modules/@nozbe/with-observables
+      @nozbe/with-observables@"*" from the root project
+
+Could not resolve dependency:
+peerOptional @types/react@"^16||^17||^18" from @nozbe/with-observables@1.6.0
+node_modules/@nozbe/with-observables
+  @nozbe/with-observables@"*" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.
